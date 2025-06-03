@@ -18,3 +18,7 @@ This project simulates a reliable retry mechanism for processing payment-like re
 2. Client: Sends the request to an processRequest function that randomly succeeds or fails (based on selected network type).
 3. Retry Logic: If it fails, the client/server retries after a short delay using exponential backoff (or linear delay).
 4. Success/Failure: Logs and statistics are updated on UI.
+
+
+## Diagram Flow of functionality 
+![Untitled-2025-06-03-2330](https://github.com/user-attachments/assets/a1aafafa-4231-471f-8276-11319521f360)
