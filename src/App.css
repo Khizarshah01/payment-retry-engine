@@ -1,0 +1,146 @@
+/* app.css */
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0;
+}
+
+/* Container */
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.network-select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.payment-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.payment-button:hover {
+  background-color: #2980b9;
+}
+
+.payment-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Stats Panel */
+.stats-panel {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #252525;
+}
+
+.stats-panel h3 {
+  margin-top: 0;
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+.stats-item {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-label {
+  font-weight: 600;
+  color: #bbbbbb;
+}
+
+.stats-value {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+}
+
+/* Logs Panel */
+.logs-panel {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #333;
+}
+
+.logs-panel h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.log-entry {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #333;
+  color: #e0e0e0;
+}
+
+.log-entry:last-child {
+  border-bottom: none;
+}
+
+/* Status Colors */
+.success {
+  color: #2ecc71;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.warning {
+  color: #f39c12;
+}
+
+.info {
+  color: #3498db;
+}
